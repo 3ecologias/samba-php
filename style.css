@@ -1,0 +1,545 @@
+/*
+Theme Name: JEOBahia
+Theme URI: https://github.com/cardume/jeo
+Author: Cardume Hacked by 3Ecologias
+Author URI: http://3ecologias.net/
+Description: Interactive maps and journalism
+Version: 0.8.11
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, white, green, light, four-columns, two-columns, responsive-layout, translation-ready, theme-options
+*/
+@media screen {
+  #printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  #printSection, #printSection * {
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+}
+
+
+
+/**** typos *****/
+h1 a {color: whitesmoke;}
+body, h1, h2, h3, h4 {font-family: 'Lato', sans-serif !important;}
+
+/**** header ****/
+.site_title {
+	position: fixed;
+	bottom: 1em;
+	left: 1em;
+}
+
+
+#masthead h1 {
+font-size: 3em !important;
+line-height: 1em !important;
+letter-spacing: -0.05em;
+}
+
+#masthead h2 {
+	font-size: 1.1em!important;
+	line-height: 0px!important;
+}
+
+#masthead .site-meta {
+margin: 0px 0 !important;
+}
+
+.displaying-map #masthead {height: 20px !important;}
+
+.navbar-header {
+margin-left: 20px;
+}
+
+.navbar-brand {
+font-size: 1.5em;
+}
+
+
+/**** map home ***/
+.home .map-container {
+	height: 100% !important;
+}
+
+
+
+/**** municipios *****/
+
+
+.post-title {
+padding-top: 5px;
+}
+
+.post-title h4 {
+margin-left: 15px;
+}
+
+.date {
+margin-top: 6px;
+margin-right: 10px;
+}
+
+.container_dados{ 
+margin-left: 30px;
+width: 95%;
+}
+
+#myTabs {
+margin-top:8px;
+margin-right: 40px;
+}
+
+.tab-pane {
+	padding: 15px;
+	margin-left: 5px;
+}
+
+.single-post-header {
+padding-top:31px !important;
+margin: 0px !important;
+}
+
+/**** icons ****/
+
+#universa {
+background-image: url("icon_set/universalizacao.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 36px;
+}
+
+#tecnoapropriada {
+background-image: url("icon_set/tecnologia_apropriada.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 39px;
+}
+
+#qualiserv {
+background-image: url("icon_set/qualidade_servicos_prestados.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 36px;
+}
+
+#adequa {
+background-image: url("icon_set/adequacao.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 36px;
+}
+
+#interset {
+background-image: url("icon_set/intersetorialidade.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 35px;
+}
+
+#indicad {
+background-image: url("icon_set/indicadores_de_eficiencia.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 32px;
+}
+
+#sustenta {
+background-image: url("icon_set/sustentabilidade.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 33px;
+}
+
+#participa {
+background-image: url("icon_set/participa_controle_social.svg");
+background-repeat: no-repeat;
+background-size: 2em auto;
+background-position: 10px center;
+padding-left: 37px;
+}
+
+/*** tabelas ****/
+.col-md-12 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+
+}
+
+.col-md-12 h3 {
+padding: 5px;
+border-radius: 5px;
+}
+
+
+.table {
+font-size: 18px;
+text-align: justify;
+}
+
+.table h4 {
+line-height: 1.7em;
+text-transform: capitalize;
+}
+
+td {
+line-height: 1.8 !important;
+}
+
+td h3 {
+border-radius: 5px;
+}
+
+.tab-pane h3 {
+	padding-bottom:5px;
+}
+
+/*** cor tabelas ***/
+.abastece {
+//border-top: 5px solid rgb(0, 176, 240) !important;
+}
+
+.abastece h3 {
+background: none repeat scroll 0% 0% #00B0F0;
+color: #fff;
+}
+
+.esgoto {
+//border-top: 5px solid #00B050 !important;	
+}
+
+.esgoto h3 {
+background: none repeat scroll 0% 0% #00B050;
+color: #fff;
+}
+
+.residuos {
+//border-top: 5px solid #FFFF00 !important;	
+}
+
+.residuos h3 {
+background: none repeat scroll 0% 0% #FFFF00;
+color: #000;	
+}
+
+.drenagem {
+//border-top: 5px solid #D89493 !important;	
+}
+
+.drenagem h3 {
+background: none repeat scroll 0% 0% #D89493;
+color: #fff;	
+}
+
+.qualidadeagua h3 {
+background: none repeat scroll 0% 0% #B2A0C6;
+color: #fff;	
+}
+
+.cortesia h3 {
+background: none repeat scroll 0% 0% #538CD3;
+color: #fff;		
+}
+
+.modicidade h3 {
+background: none repeat scroll 0% 0% #92CCDC;
+color: #000;	
+}
+
+.regularidade h3 {
+background: none repeat scroll 0% 0% #76923B;
+color: #fff;	
+}
+.seguranca h3 {
+background: none repeat scroll 0% 0% #C1D69A;
+color: #000;	
+}
+.manutencao h3 {
+background: none repeat scroll 0% 0% #FFFF99;
+color: #000;	
+}
+
+.saude h3 {
+background: none repeat scroll 0% 0% #F9BF8E;
+color: #000;	
+}
+
+.meioambiente h3 {
+background: none repeat scroll 0% 0% #E36C0A;
+color: #fff;
+}
+
+.energetica h3 {
+background: none repeat scroll 0% 0% #CCBFD8;
+color: #000;	
+}
+
+.pessoal h3 {
+background: none repeat scroll 0% 0% #8CB2E1;
+color: #000;	
+}
+
+.recursos h3 {
+background: none repeat scroll 0% 0% #B6DDE7;
+color: #000;	
+}
+.tecnico h3 {
+background: none repeat scroll 0% 0% #D6E3BB;
+color: #000;	
+}
+
+.situacao h3 {
+background: none repeat scroll 0% 0% #EAF1DD;
+color: #000;	
+}
+
+.mecanismo h3 {
+background: none repeat scroll 0% 0% #FFFFCC;
+color: #000;	
+}
+
+.composicao h3 {
+background: none repeat scroll 0% 0% #FAD3B3;
+color: #000;	
+}
+
+
+/*** charts ***/
+.chart {
+display: inline-block;
+float: left;
+}
+
+/**** page-load and page-content *****/
+
+#page-content {
+float: left;
+height: auto;
+border-radius: 1em;
+width: 80%;
+padding: 40px;
+background: none repeat scroll 0% 0% rgba(103, 166, 127, 0.6);
+color: #FFF;
+text-align: justify;
+position: fixed;
+right: 7.5%;
+bottom: 0px;
+display: none;
+font-size: 130%;
+}
+
+#page-load {
+padding: 15px;
+color: #FFF;
+position: fixed;
+right: 2px;
+bottom: 2px;
+cursor: pointer;
+border-radius: 0.5em;
+font-size: 120%;
+z-index:5;
+}
+
+
+
+#page-load:hover {
+background: rgba(176, 213, 75, 0.6);
+}
+
+#page-content-contato {
+float: right;
+height: auto;
+border-radius: 1em;
+width: 42%;
+padding: 30px 20px;
+background: none repeat scroll 0% 0% rgba(103, 166, 127, 0.6);
+color: rgb(255, 255, 255);
+text-align: justify;
+position: fixed;
+right: 50px;
+bottom: 0;
+display: none;
+}
+
+#page-contato {
+padding: 15px;
+color: #FFF;
+position: fixed;
+right: 75px;
+bottom: 2px;
+cursor: pointer;
+border-radius: 0.5em;
+z-index: 5;
+font-size: 120%;
+}
+
+.close-contato, .close-sobre {
+top: 0.5em;
+right: 0.5em;
+width: auto;
+height: auto;
+position: absolute;
+cursor: pointer;
+font-size: 2em;
+}
+
+.close-contato:hover, .close-sobre:hover {
+color: rgba(176, 213, 75, 0.6);
+}
+
+#page-contato:hover {
+background: rgba(176, 213, 75, 0.6);
+}
+
+#forum {
+padding: 15px;
+color: #FFF;
+position: fixed;
+right: 199px;
+bottom: 2px;
+cursor: pointer;
+border-radius: 0.5em;
+font-size: 120%;
+}
+
+#forum:hover {
+background: rgba(176, 213, 75, 0.6);
+}
+
+#forum a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/***** leaflet stuffs *****/
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+	background-color: rgba(8, 117, 104, 0.4) !important;
+}
+
+.leaflet-popup-content-wrapper h4{
+	color: #fff !important;
+	line-height:1em;
+}
+
+/*****sujeiras - fazer no php**********/
+.map-legend {
+	display:none;
+}
+
+.leaflet-popup-content small {
+display: none;
+}
+
+.leaflet-bottom {
+    top: 6px !important;
+}
+
+.map-fullscreen {
+display:none !important;
+}
+
+
+/***** bbpress *****/
+
+#bbpress-forums {
+	margin-top: 12em;
+	margin-left: 1em;
+}
+
+.subscription-toggle {
+	float: right;
+}
+
+#bbpress-forums fieldset.bbp-form {
+	border: 0px !important;
+}
+
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+	border: 1px solid #DDD;
+}
+
+/***** relatorios ******/
+.modal-dialog {
+	width: 80% !important;
+}
+
+.modal-content{
+	padding: 3em;
+	text-align: justify;
+	font-size: 115%;
+	line-height: 178%;
+}
+
+.modal-content h1 {
+font-size: 3em;
+}
+
+.modal-content h4 {
+	padding-top: 1em;
+}
+
+.modal-content h5 {
+font-family: Georgia !important;
+font-style: italic;
+font-size: 1.0em;
+margin-left: 4em;
+margin-right: 4em;
+line-height: 1.8em;
+padding-top: 1.5em;
+}
+
+#relatorio {
+	padding: 2em;
+	font-size: 120%;
+}
+
+#relatorio h3 {
+	color:#2A6496;
+}
+.btn {
+	margin-left: 2em;
+}
+
+/***** charts  ******/
+.chartz {
+height: 400px;
+padding: 1em;
+border-radius: 14px;
+background-color: #F0F8FF;
+margin: 1em;
+}
+
+.wp_charts_canvas {
+min-height: 350px;
+}
+
+#btnPrint {
+    position: absolute;
+    right: 0%;
+    top: 2px;
+    width: 20%;
+}
+
+#btnPrint img {
+	width:30%;
+}
+
